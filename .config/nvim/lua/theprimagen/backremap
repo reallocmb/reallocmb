@@ -1,0 +1,58 @@
+local nnoremap = require("theprimagen.keymap").nnoremap
+
+-- Ex Menu
+nnoremap("<leader>pv", "<cmd>Ex<cr>");
+
+-- Window Movment
+nnoremap("<leader>h", ":wincmd h<cr>");
+nnoremap("<leader>j", ":wincmd j<cr>");
+nnoremap("<leader>k", ":wincmd k<cr>");
+nnoremap("<leader>l", ":wincmd l<cr>");
+
+nnoremap("<leader>i", ":wincmd s<cr>");
+nnoremap("<leader>a", ":wincmd v<cr>");
+nnoremap("<leader>c", ":hid<cr>");
+
+-- Save Things
+nnoremap("<leader>w", ":w<cr>");
+nnoremap("<leader><leader>w", ":source %<cr>");
+nnoremap("<leader>q", ":q<cr>");
+nnoremap("<leader>x", ":x!<cr>");
+
+-- Visual Mode
+nnoremap("<leader>v", "V");
+nnoremap("<leader><leader>v", "<c-v>");
+
+-- Tabs
+nnoremap("<leader>e", ":tabnew<cr>");
+nnoremap("<leader>u", ":tabclose<cr>");
+nnoremap("<Tab>", "gt");
+nnoremap("<S-Tab>", "gT");
+
+-- Terminal in nvim
+nnoremap("<leader>o", ":terminal<cr>");
+vim.api.nvim_set_keymap('t', '<ESC>', '<C-\\><C-n>', { noremap = false });
+-- File Change
+nnoremap("<leader>zz", ":%! xxd<cr>");
+nnoremap("<leader>zu", ":%! xxd -r<cr>");
+
+-- Telescope
+nnoremap("<leader>f", ":Telescope find_files<cr>");
+
+-- Harpoon
+nnoremap("<leader>pa", function() require("harpoon.mark").add_file() end, silent)
+nnoremap("<leader>pm", function() require("harpoon.ui").toggle_quick_menu() end, silent)
+
+nnoremap("<leader>1", function() require("harpoon.ui").nav_file(1) end, silent)
+nnoremap("<leader>2", function() require("harpoon.ui").nav_file(2) end, silent)
+nnoremap("<leader>3", function() require("harpoon.ui").nav_file(3) end, silent)
+nnoremap("<leader>4", function() require("harpoon.ui").nav_file(4) end, silent)
+
+-- macros
+-- comments
+nnoremap("<leader>mc", "@c");
+nnoremap("<leader>mw", "@w");
+
+-- markdown-preview
+nnoremap("<leader>bo", ":MarkdownPreview<cr>");
+nnoremap("<leader>bc", ":MarkdownPreviewStop<cr>");
