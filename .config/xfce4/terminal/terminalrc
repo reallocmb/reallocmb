@@ -1,5 +1,5 @@
 [Configuration]
-FontName=Monospace 30
+FontName=Monospace 20
 MiscAlwaysShowTabs=FALSE
 MiscBell=FALSE
 MiscBellUrgent=FALSE
@@ -28,7 +28,16 @@ MiscNewTabAdjacent=FALSE
 MiscSearchDialogOpacity=100
 MiscShowUnsafePasteDialog=TRUE
 MiscRightClickAction=TERMINAL_RIGHT_CLICK_ACTION_CONTEXT_MENU
-ColorPalette=#000000;#cc0000;#4e9a06;#c4a000;#3465a4;#75507b;#06989a;#d3d7cf;#555753;#ef2929;#8ae234;#fce94f;#739fcf;#ad7fa8;#34e2e2;#eeeeec
-ColorForeground=#c0c06161cbcb
 ScrollingBar=TERMINAL_SCROLLBAR_NONE
+BackgroundImageFile=/home/mb/.config/herbstluftwm/bg/back.jpg
+BackgroundImageStyle=TERMINAL_BACKGROUND_STYLE_FILLED
+BackgroundImageShading=0.230000
+BackgroundDarkness=0.000000
+ColorForeground=#35358484e4e4
+ColorBackground=#002b36
+ColorPalette=#073642;#dc322f;#859900;#b58900;#268bd2;#d33682;#2aa198;#eee8d5;#002b36;#cb4b16;#586e75;#657b83;#839496;#6c71c4;#93a1a1;#fdf6e3
+ColorCursor=#93a1a1
+ColorBold=#93a1a1
+ColorBoldUseDefault=FALSE
+TabActivityColor=#dc322f
 

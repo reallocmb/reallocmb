@@ -23,10 +23,11 @@ hc keybind $Mod-Shift-u reload
 hc keybind $Mod-x close
 hc keybind $Mod-Return spawn xfce4-terminal # use your $TERMINAL with xterm as fallback
 
+hc keybind $Mod-a spawn lap-monitor-off.sh
+
 # screenshot
 hc keybind $Mod-e spawn flameshot gui
 
-hc keybind $Mod-a spawn dmenu_run
 hc keybind $Mod-i spawn rofi -show run
 hc keybind $Mod-Tab spawn rofi -show
 
@@ -170,7 +171,6 @@ hc detect_monitors
 
 
 # polybar
-sh ~/.config/herbstluftwm/polybar.sh
 
 #panel=~/.config/herbstluftwm/panel.sh
 #[ -x "$panel" ] || panel=/etc/xdg/herbstluftwm/panel.sh
