@@ -1,5 +1,5 @@
 [Configuration]
-FontName=Monospace 20
+FontName=Hack Italic 20
 MiscAlwaysShowTabs=FALSE
 MiscBell=FALSE
 MiscBellUrgent=FALSE
@@ -19,7 +19,7 @@ MiscTabCloseMiddleClick=TRUE
 MiscTabPosition=GTK_POS_TOP
 MiscHighlightUrls=TRUE
 MiscMiddleClickOpensUri=FALSE
-MiscCopyOnSelect=FALSE
+MiscCopyOnSelect=TRUE
 MiscShowRelaunchDialog=TRUE
 MiscRewrapOnResize=TRUE
 MiscUseShiftArrowsToScroll=FALSE
@@ -29,12 +29,12 @@ MiscSearchDialogOpacity=100
 MiscShowUnsafePasteDialog=TRUE
 MiscRightClickAction=TERMINAL_RIGHT_CLICK_ACTION_CONTEXT_MENU
 ScrollingBar=TERMINAL_SCROLLBAR_NONE
-BackgroundImageFile=/home/mb/.config/herbstluftwm/bg/back.jpg
-BackgroundImageStyle=TERMINAL_BACKGROUND_STYLE_FILLED
-BackgroundImageShading=0.230000
+BackgroundImageStyle=TERMINAL_BACKGROUND_STYLE_CENTERED
+BackgroundImageShading=0.000000
 BackgroundDarkness=0.000000
 ColorPalette=#3f3f3f;#705050;#60b48a;#dfaf8f;#9ab8d7;#dc8cc3;#8cd0d3;#dcdcdc;#709080;#dca3a3;#72d5a3;#f0dfaf;#94bff3;#ec93d3;#93e0e3;#ffffff
-ColorForeground=#c0c06161cbcb
+ColorForeground=#2626a2a26969
 ColorBackground=#2c2c2c
 ColorCursor=#dcdcdc
+TabActivityColor=#aaaa00000000
 

@@ -129,6 +129,11 @@ _G.packer_plugins = {
     path = "/home/mb/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
+  purify = {
+    loaded = true,
+    path = "/home/mb/.local/share/nvim/site/pack/packer/start/purify",
+    url = "https://github.com/kyoz/purify"
+  },
   ["telescope.nvim"] = {
     loaded = true,
     path = "/home/mb/.local/share/nvim/site/pack/packer/start/telescope.nvim",
@@ -138,6 +143,21 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/mb/.local/share/nvim/site/pack/packer/start/tokyonight.nvim",
     url = "https://github.com/folke/tokyonight.nvim"
+  },
+  ["vim-airline"] = {
+    loaded = true,
+    path = "/home/mb/.local/share/nvim/site/pack/packer/start/vim-airline",
+    url = "https://github.com/vim-airline/vim-airline"
+  },
+  ["vim-airline-themes"] = {
+    loaded = true,
+    path = "/home/mb/.local/share/nvim/site/pack/packer/start/vim-airline-themes",
+    url = "https://github.com/vim-airline/vim-airline-themes"
+  },
+  ["vim-devicons"] = {
+    loaded = true,
+    path = "/home/mb/.local/share/nvim/site/pack/packer/start/vim-devicons",
+    url = "https://github.com/ryanoasis/vim-devicons"
   },
   ["vim-maximizer"] = {
     loaded = true,

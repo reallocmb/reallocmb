@@ -69,9 +69,9 @@ nnoremap("<leader>d", "<c-d>");
 nnoremap("<leader>u", "<c-u>");
 
 -- any jump plugin
-nnoremap("<leader>gd", ":AnyJump<cr>");
-xnoremap("<leader>gd", ":AnyJumpVisual<cr>");
-nnoremap("<leader>gu", ":AnyJumpBack<cr>");
+-- nnoremap("<leader>gd", ":AnyJump<cr>");
+-- xnoremap("<leader>gd", ":AnyJumpVisual<cr>");
+-- nnoremap("<leader>gu", ":AnyJumpBack<cr>");
 
 vim.g.any_jump_disable_default_keybindings = 1
 vim.g.any_jump_search_prefered_engine = "ag"
