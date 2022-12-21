@@ -6,7 +6,7 @@ return require('packer').startup(function(use)
     -- color
     use 'folke/tokyonight.nvim'
     use 'ellisonleao/gruvbox.nvim'
-    use 'kyoz/purify'
+    use 'Mofiqul/vscode.nvim'
 
     use 'szw/vim-maximizer'
 

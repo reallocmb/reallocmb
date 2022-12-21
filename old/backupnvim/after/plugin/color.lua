@@ -5,6 +5,7 @@ vim.opt.background = "dark"
 -- vim.cmd("colorscheme tokyonight")
 --vim.cmd("colorscheme peachpuff")
 -- vim.cmd("colorscheme desert")
-vim.cmd("colorscheme tokyonight")
+-- vim.cmd("colorscheme tokyonight")
+vim.cmd("colorscheme gruvbox");
 
 vim.cmd("AirlineTheme violet")
