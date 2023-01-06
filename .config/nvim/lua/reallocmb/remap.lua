@@ -42,3 +42,10 @@ vim.keymap.set("n", "<C-r", "<cmd>cnext<cr>zz")
 vim.keymap.set("n", "<leader>o", ":terminal<cr>")
 vim.api.nvim_set_keymap("t", "<ESC>", "<C-\\><C-n>", { noremap = false })
 
+-- tabs
+vim.keymap.set("n", "<leader>tj", ":tabnew<cr>");
+vim.keymap.set("n", "<leader>tc", ":tabclose<cr>");
+vim.keymap.set("n", "<Tab>", "gt");
+vim.keymap.set("n", "<S-Tab>", "gT");
+
+
