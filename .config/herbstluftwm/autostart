@@ -26,7 +26,8 @@ hc keybind $Mod-Return spawn xfce4-terminal # use your $TERMINAL with xterm as f
 hc keybind $Mod-a spawn lap-monitor-off.sh
 
 # screenshot
-hc keybind $Mod-e spawn flameshot gui
+#hc keybind $Mod-e spawn flameshot gui
+hc keybind $Mod-e spawn ksnip -c
 
 hc keybind $Mod-i spawn rofi -show run
 hc keybind $Mod-Tab spawn rofi -show

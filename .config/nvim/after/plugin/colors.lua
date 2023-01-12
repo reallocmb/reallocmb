@@ -1,3 +1,3 @@
 -- ColorMyPencils()
 vim.cmd.colorscheme('gruvbox')
-vim.api.nvim_command('set background=light');
+vim.api.nvim_command('set background=dark');

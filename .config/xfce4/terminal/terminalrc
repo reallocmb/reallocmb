@@ -1,5 +1,5 @@
 [Configuration]
-FontName=Anonymice Nerd Font Mono Bold Italic 20
+FontName=Anonymous Pro Bold Italic 20
 MiscAlwaysShowTabs=FALSE
 MiscBell=FALSE
 MiscBellUrgent=FALSE
@@ -32,10 +32,8 @@ ScrollingBar=TERMINAL_SCROLLBAR_NONE
 BackgroundImageStyle=TERMINAL_BACKGROUND_STYLE_CENTERED
 BackgroundImageShading=0.000000
 BackgroundDarkness=1.000000
+ColorForeground=#e5e5a5a50a0a
+ColorBackground=#24241f1f3131
+ColorCursor=#dcdcdc
 ColorPalette=#3f3f3f;#705050;#60b48a;#dfaf8f;#9ab8d7;#dc8cc3;#8cd0d3;#dcdcdc;#709080;#dca3a3;#72d5a3;#f0dfaf;#94bff3;#ec93d3;#93e0e3;#ffffff
-ColorForeground=#6262a0a0eaea
-ColorBackground=#2c2c2c
-ColorCursor=#6262a0a0eaea
-ColorSelectionBackground=#81813d3d9c9c
-ColorSelection=#f5f5c2c21111
 
