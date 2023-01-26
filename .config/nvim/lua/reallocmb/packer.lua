@@ -1,6 +1,8 @@
 vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function(use)
+    --debbuging
+    use ("sakhnik/nvim-gdb")
 
     --Colorscheme
     use ("ellisonleao/gruvbox.nvim")
