@@ -1,10 +1,17 @@
 vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function(use)
-    --debbuging
-    use ("sakhnik/nvim-gdb")
-
+    -- Transparent
+    use ('xiyaowong/nvim-transparent')
+    -- Zoom
+    use ('dhruvasagar/vim-zoom')
     --Colorscheme
+    use ('folke/tokyonight.nvim')
+    use ('axvr/raider.vim')
+    use ('muchzill4/doubletrouble')
+    use ('TroyFletcher/vim-colors-synthwave')
+    use ('dunstontc/vim-vscode-theme')
+    use ('casperstorm/sort-hvid.vim')
     use ("ellisonleao/gruvbox.nvim")
     use({
         'rose-pine/neovim',

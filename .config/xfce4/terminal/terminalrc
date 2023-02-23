@@ -1,12 +1,12 @@
 [Configuration]
-FontName=Anonymous Pro Italic 20
+FontName=Monospace Bold 20
 MiscAlwaysShowTabs=FALSE
 MiscBell=FALSE
 MiscBellUrgent=FALSE
 MiscBordersDefault=FALSE
 MiscCursorBlinks=FALSE
 MiscCursorShape=TERMINAL_CURSOR_SHAPE_BLOCK
-MiscDefaultGeometry=80x24
+MiscDefaultGeometry=10x10
 MiscInheritGeometry=FALSE
 MiscMenubarDefault=FALSE
 MiscMouseAutohide=FALSE
@@ -28,13 +28,15 @@ MiscNewTabAdjacent=FALSE
 MiscSearchDialogOpacity=100
 MiscShowUnsafePasteDialog=TRUE
 MiscRightClickAction=TERMINAL_RIGHT_CLICK_ACTION_CONTEXT_MENU
-ScrollingBar=TERMINAL_SCROLLBAR_NONE
-BackgroundImageStyle=TERMINAL_BACKGROUND_STYLE_CENTERED
 BackgroundImageShading=0.000000
-BackgroundDarkness=0.000000
-ColorForeground=#e5e5a5a50a0a
-ColorBackground=#24241f1f3131
+BackgroundDarkness=1.000000
+FontAllowBold=FALSE
+Encoding=UTF-8
+BackgroundImageFile=/home/mb/downloads/rain.jpg
+ScrollingOnKeystroke=FALSE
+ScrollingBar=TERMINAL_SCROLLBAR_NONE
+ColorForeground=#f3327c07b12b
+ColorBackground=#000000000000
 ColorCursor=#dcdcdc
 ColorPalette=#3f3f3f;#705050;#60b48a;#dfaf8f;#9ab8d7;#dc8cc3;#8cd0d3;#dcdcdc;#709080;#dca3a3;#72d5a3;#f0dfaf;#94bff3;#ec93d3;#93e0e3;#ffffff
-FontAllowBold=FALSE
 

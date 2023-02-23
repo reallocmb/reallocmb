@@ -104,6 +104,11 @@ _G.packer_plugins = {
     path = "/home/mb/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
+  doubletrouble = {
+    loaded = true,
+    path = "/home/mb/.local/share/nvim/site/pack/packer/start/doubletrouble",
+    url = "https://github.com/muchzill4/doubletrouble"
+  },
   ["friendly-snippets"] = {
     loaded = true,
     path = "/home/mb/.local/share/nvim/site/pack/packer/start/friendly-snippets",
@@ -139,15 +144,15 @@ _G.packer_plugins = {
     path = "/home/mb/.local/share/nvim/site/pack/packer/start/nvim-cmp",
     url = "https://github.com/hrsh7th/nvim-cmp"
   },
-  ["nvim-gdb"] = {
-    loaded = true,
-    path = "/home/mb/.local/share/nvim/site/pack/packer/start/nvim-gdb",
-    url = "https://github.com/sakhnik/nvim-gdb"
-  },
   ["nvim-lspconfig"] = {
     loaded = true,
     path = "/home/mb/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
+  },
+  ["nvim-transparent"] = {
+    loaded = true,
+    path = "/home/mb/.local/share/nvim/site/pack/packer/start/nvim-transparent",
+    url = "https://github.com/xiyaowong/nvim-transparent"
   },
   ["nvim-treesitter"] = {
     loaded = true,
@@ -169,6 +174,11 @@ _G.packer_plugins = {
     path = "/home/mb/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
+  ["raider.vim"] = {
+    loaded = true,
+    path = "/home/mb/.local/share/nvim/site/pack/packer/start/raider.vim",
+    url = "https://github.com/axvr/raider.vim"
+  },
   ["rose-pine"] = {
     loaded = true,
     path = "/home/mb/.local/share/nvim/site/pack/packer/start/rose-pine",
@@ -179,10 +189,20 @@ _G.packer_plugins = {
     path = "/home/mb/.local/share/nvim/site/pack/packer/start/solarized.nvim",
     url = "https://github.com/shaunsingh/solarized.nvim"
   },
+  ["sort-hvid.vim"] = {
+    loaded = true,
+    path = "/home/mb/.local/share/nvim/site/pack/packer/start/sort-hvid.vim",
+    url = "https://github.com/casperstorm/sort-hvid.vim"
+  },
   ["telescope.nvim"] = {
     loaded = true,
     path = "/home/mb/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
+  },
+  ["tokyonight.nvim"] = {
+    loaded = true,
+    path = "/home/mb/.local/share/nvim/site/pack/packer/start/tokyonight.nvim",
+    url = "https://github.com/folke/tokyonight.nvim"
   },
   undotree = {
     loaded = true,
@@ -194,6 +214,11 @@ _G.packer_plugins = {
     path = "/home/mb/.local/share/nvim/site/pack/packer/start/vim",
     url = "https://github.com/dracula/vim"
   },
+  ["vim-colors-synthwave"] = {
+    loaded = true,
+    path = "/home/mb/.local/share/nvim/site/pack/packer/start/vim-colors-synthwave",
+    url = "https://github.com/TroyFletcher/vim-colors-synthwave"
+  },
   ["vim-fugitive"] = {
     loaded = true,
     path = "/home/mb/.local/share/nvim/site/pack/packer/start/vim-fugitive",
@@ -203,6 +228,16 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/mb/.local/share/nvim/site/pack/packer/start/vim-vintage-colorscheme",
     url = "https://github.com/Shaedil/vim-vintage-colorscheme"
+  },
+  ["vim-vscode-theme"] = {
+    loaded = true,
+    path = "/home/mb/.local/share/nvim/site/pack/packer/start/vim-vscode-theme",
+    url = "https://github.com/dunstontc/vim-vscode-theme"
+  },
+  ["vim-zoom"] = {
+    loaded = true,
+    path = "/home/mb/.local/share/nvim/site/pack/packer/start/vim-zoom",
+    url = "https://github.com/dhruvasagar/vim-zoom"
   }
 }
 
