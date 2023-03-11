@@ -219,6 +219,11 @@ _G.packer_plugins = {
     path = "/home/mb/.local/share/nvim/site/pack/packer/start/vim-colors-synthwave",
     url = "https://github.com/TroyFletcher/vim-colors-synthwave"
   },
+  ["vim-colortemplate"] = {
+    loaded = true,
+    path = "/home/mb/.local/share/nvim/site/pack/packer/start/vim-colortemplate",
+    url = "https://github.com/lifepillar/vim-colortemplate"
+  },
   ["vim-fugitive"] = {
     loaded = true,
     path = "/home/mb/.local/share/nvim/site/pack/packer/start/vim-fugitive",

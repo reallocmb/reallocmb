@@ -29,3 +29,6 @@ vim.opt.isfname:append("@-@")
 vim.opt.updatetime = 50
 
 vim.g.mapleader = " "
+
+vim.api.nvim_command("set cursorline")
+vim.api.nvim_command("set cursorlineopt=number")

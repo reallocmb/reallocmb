@@ -1,6 +1,7 @@
 vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function(use)
+    use ('lifepillar/vim-colortemplate')
     -- Transparent
     use ('xiyaowong/nvim-transparent')
     -- Zoom
