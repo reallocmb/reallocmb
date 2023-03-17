@@ -1,5 +1,5 @@
-xrandr --output eDP-1 --gamma 0.65:0.45:0.08 --brightness 1 &
-feh --bg-scale ~/.config/i3/rain.jpg &
+feh --bg-scale ~/.config/i3/violett.jpg &
+xrandr --output eDp1 --gamma 0.7:0.6:0.1 &
 rfkill unblock all &
 flameshot &
 picom -b &

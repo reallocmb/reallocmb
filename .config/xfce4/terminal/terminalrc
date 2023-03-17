@@ -1,5 +1,5 @@
 [Configuration]
-FontName=Monospace Bold 20
+FontName=Source Code Variable Heavy Italic 20
 MiscAlwaysShowTabs=FALSE
 MiscBell=FALSE
 MiscBellUrgent=FALSE
@@ -39,4 +39,5 @@ ColorBackground=#0c0c0c0c0c0c
 ColorCursor=#dcdcdc
 ColorPalette=#3f3f3f;#705050;#60b48a;#dfaf8f;#9ab8d7;#dc8cc3;#8cd0d3;#dcdcdc;#709080;#dca3a3;#72d5a3;#f0dfaf;#94bff3;#ec93d3;#93e0e3;#ffffff
 BackgroundImageShading=0.400000
+CellHeightScale=1.050000
 
