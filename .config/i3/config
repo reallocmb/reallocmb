@@ -24,7 +24,7 @@ bindsym $mod+d exec .config/i3/newterminal.sh
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font pango:monospace 15
+font pango:monospace 25
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -163,7 +163,7 @@ bindsym $mod+Shift+0 move container to workspace number $ws10
 assign [class="Google-chrome"] $ws1
 
 # reload the configuration file
-bindsym $mod+Shift+adiaeresis reload
+bindsym $mod+Shift+W reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+C restart
 # exit i3 (logs you out of your X session)
@@ -206,8 +206,8 @@ client.urgent               $urgent-bg-color    $urgent-bg-color    $text-color 
 
 bar {
     status_command i3blocks -c ~/.config/i3/i3blocks.conf
-    status_command i3status -c ~/.config/i3/i3status.conf
-    position bottom
+    #status_command i3status -c ~/.config/i3/i3status.conf
+    position top
     colors {
         background $bg-color
         separator #757575
@@ -218,4 +218,4 @@ bar {
 }
 
 # i3 gaps
-gaps inner 5px
+gaps inner 30px

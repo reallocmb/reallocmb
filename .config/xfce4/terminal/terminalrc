@@ -1,5 +1,5 @@
 [Configuration]
-FontName=Source Code Variable Heavy Italic 20
+FontName=FreeMono Bold 20
 MiscAlwaysShowTabs=FALSE
 MiscBell=FALSE
 MiscBellUrgent=FALSE
@@ -29,15 +29,11 @@ MiscSearchDialogOpacity=100
 MiscShowUnsafePasteDialog=TRUE
 MiscRightClickAction=TERMINAL_RIGHT_CLICK_ACTION_CONTEXT_MENU
 BackgroundDarkness=0.520000
-FontAllowBold=FALSE
 Encoding=UTF-8
-BackgroundImageFile=/home/mb/.config/i3/violett.jpg
+BackgroundImageFile=/run/media/mb/Extreme SSD/fujifilm_photos/DSCF0035.JPG
 ScrollingOnKeystroke=FALSE
 ScrollingBar=TERMINAL_SCROLLBAR_NONE
-ColorForeground=#ffff78780000
-ColorBackground=#0c0c0c0c0c0c
-ColorCursor=#dcdcdc
-ColorPalette=#3f3f3f;#705050;#60b48a;#dfaf8f;#9ab8d7;#dc8cc3;#8cd0d3;#dcdcdc;#709080;#dca3a3;#72d5a3;#f0dfaf;#94bff3;#ec93d3;#93e0e3;#ffffff
-BackgroundImageShading=0.400000
-CellHeightScale=1.050000
+BackgroundImageShading=0.000000
+ColorForeground=#17f018
+BackgroundImageStyle=TERMINAL_BACKGROUND_STYLE_FILLED
 
