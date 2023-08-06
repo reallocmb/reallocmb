@@ -23,9 +23,9 @@ bindsym $mod+ö exec amixer sset Master 2%+
 bindsym $mod+ä exec amixer sset Master 2%-
 
 # my command s to run 
-bindsym $mod+g exec systemctl suspend
-bindsym $mod+f exec reboot
-bindsym $mod+q exec shutdown now
+bindsym $mod+g exec sudo systemctl suspend
+bindsym $mod+f exec sudo reboot
+bindsym $mod+q exec sudo shutdown now
 
 bindsym $mod+a exec rofi -show run
 bindsym $mod+d exec .config/i3/newterminal.sh
