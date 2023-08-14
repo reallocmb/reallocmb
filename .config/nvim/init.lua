@@ -43,26 +43,38 @@ vim.keymap.set('n', '<leader>a', ':wincmd v<cr>')
 vim.keymap.set('n', '<leader>c', ':hid<cr>')
 
 --vim.keymap.set('n', 'J', 'mzJ`z')
---vim.keymap.set('n', 'ä', 'nzzzv');
---vim.keymap.set('n', 'ö', 'Nzzzv');
+vim.keymap.set('n', 'ä', 'nzzzv');
+vim.keymap.set('n', 'ö', 'Nzzzv');
 
+-- terminal
+vim.keymap.set("n", "<leader>o", ":terminal<cr>")
+vim.api.nvim_set_keymap("t", "<ESC>", "<C-\\><C-n>", { noremap = false })
 
 -- Plugins width PACKER
 vim.cmd [[packadd packer.nvim]]
 
-vim.cmd.colorscheme("4coder")
-
--- configure Treesitter
-require('nvim-treesitter.configs').setup {
-    highlight = { enable = true },
-    auto_install = true,
-}
-
 return require('packer').startup(function(use)
 	use('wbthomason/packer.nvim')
+
 	use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
 	use('nvim-treesitter/playground')
 
-    use('theprimeagen/harpoon')
-    use('mbbill/undotree')
+    use {
+        'nvim-telescope/telescope.nvim', tag = '0.1.2',
+        -- or                            , branch = '0.1.x',
+        requires = { {'nvim-lua/plenary.nvim'} }
+    }
+
+    use {
+        'theprimeagen/harpoon',
+        requires = { {'nvim-lua/plenary.nvim'} }
+    }
+
+    use('neovim/nvim-lspconfig')
+    use('hrsh7th/nvim-cmp')
+    use('hrsh7th/cmp-nvim-lsp')
+    use 'saadparwaiz1/cmp_luasnip' -- Snippets source for nvim-cmp
+    use 'L3MON4D3/LuaSnip' -- Snippets plugin
+
+    -- use('mbbill/undotree')
 end)
