@@ -1,4 +1,5 @@
 vim.cmd.colorscheme("4coder")
+vim.cmd.colorscheme("my")
 --
 -- configure Treesitter
 require('nvim-treesitter.configs').setup {
