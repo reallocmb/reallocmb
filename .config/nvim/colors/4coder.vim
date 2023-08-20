@@ -49,6 +49,7 @@ hi @constant guifg=#90b080
 
 hi Normal guifg=#90b080 guibg=#0c0c0c gui=NONE cterm=NONE
 hi Normal guifg=#90b080 guibg=#242424 gui=NONE cterm=NONE
+hi Normal guifg=#90b080 guibg=#2c2c2c gui=NONE cterm=NONE
 hi StatusLine guifg=#333333 guibg=#c2bfa5 gui=NONE cterm=NONE
 hi StatusLineNC guifg=#7f7f8c guibg=#c2bfa5 gui=NONE cterm=NONE
 hi StatusLineTerm guifg=#333333 guibg=#c2bfa5 gui=NONE cterm=NONE
@@ -63,7 +64,7 @@ hi TabLineFill guifg=NONE guibg=#c2bfa5 gui=NONE cterm=NONE
 hi TabLineSel guifg=#333333 guibg=#f0e68c gui=NONE cterm=NONE
 hi ToolbarLine guifg=NONE guibg=#666666 gui=NONE cterm=NONE
 hi ToolbarButton guifg=#333333 guibg=#ffde9b gui=bold cterm=bold
-hi NonText guifg=#6dceeb guibg=#242424 gui=NONE cterm=NONE
+hi NonText guifg=#6dceeb guibg=#2c2c2c gui=NONE cterm=NONE
 hi SpecialKey guifg=#9acd32 guibg=NONE gui=NONE cterm=NONE
 hi Folded guifg=#eeee00 guibg=#4d4d4d gui=NONE cterm=NONE
 hi Visual guifg=#f0e68c guibg=#6b8e24 gui=NONE cterm=NONE

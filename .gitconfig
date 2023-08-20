@@ -2,4 +2,6 @@
 	name = reallocmb
 	email = realloc.mb@gmail.com
 [credential]
-	helper = cache
+	helper = store
+[core]
+	editor = nvim
