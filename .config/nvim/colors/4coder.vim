@@ -22,9 +22,10 @@ endif
 hi @type guifg=#d08f20 
 hi @lsp.type.enum guifg=#d08f20 
 hi @type.definition guifg=#d08f20 
-hi @lsp.type.type.c guifg=#d08f20 
-hi @lsp.type.class.c guifg=#d08f20 
+hi @lsp.type.type guifg=#d08f20 
+hi @lsp.type.class guifg=#d08f20 
 hi @keyword guifg=#d08f20 
+hi @lsp.type.type guifg=#d08f20 
 hi @storageclass guifg=#d08f20 
 hi @keyword.return guifg=#d08f20 
 hi @repeat guifg=#d08f20 
@@ -33,6 +34,11 @@ hi @variable guifg=#90b080
 hi @preproc guifg=#90b080
 hi @parameter guifg=#90b080
 hi @function guifg=#90b080
+hi @lsp.type.function guifg=#90b080
+hi @lsp.type.parameter guifg=#90b080
+hi @lsp.type.variable guifg=#90b080
+hi @lsp.type.property guifg=#90b080
+
 hi @punctuation.bracket guifg=#90b080
 hi @punctuation.delimiter guifg=#90b080
 hi @include guifg=#747474
