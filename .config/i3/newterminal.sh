@@ -8,5 +8,5 @@ current_dir=$(xdotool getwindowname "$terminal_id" | cut -d ":" -f 2)
 current_dir="${current_dir/\~/$HOME}"
 
 # Starten Sie ein neues Terminalfenster und ändern Sie das Verzeichnis auf das aktuelle Verzeichnis
-xfce4-terminal --working-directory="$current_dir"
+lxterminal --working-directory="$current_dir"
 

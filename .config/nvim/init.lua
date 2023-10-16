@@ -77,4 +77,11 @@ return require('packer').startup(function(use)
     use 'L3MON4D3/LuaSnip' -- Snippets plugin
 
     -- use('mbbill/undotree')
+
+    use('ellisonleao/gruvbox.nvim')
+    use('tomasr/molokai')
+    use('adigitoleo/vim-mellow')
+
+    -- latex
+    use('lervag/vimtex')
 end)

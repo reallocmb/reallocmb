@@ -1,7 +1,8 @@
 vim.cmd.colorscheme("my")
-vim.cmd.colorscheme("4coder")
 vim.cmd.colorscheme('habamax')
---
+vim.cmd.colorscheme("4coder")
+
+
 -- configure Treesitter
 require('nvim-treesitter.configs').setup {
     highlight = { enable = true },
@@ -25,6 +26,7 @@ vim.keymap.set('n', '<C-m>', harpoon_ui.nav_next, {})
 
 -- configure lsp
 require('lspconfig').clangd.setup{}
+require('lspconfig').tsserver.setup{}
 
 vim.api.nvim_create_autocmd('LspAttach', {
     group = vim.api.nvim_create_augroup('UserLspConfig', {}),
@@ -34,7 +36,7 @@ vim.api.nvim_create_autocmd('LspAttach', {
         vim.keymap.set('n', 'gd', vim.lsp.buf.definition, opts)
         vim.keymap.set('n', 'K', vim.lsp.buf.hover, opts)
         vim.keymap.set('n', 'gi', vim.lsp.buf.implementation, opts)
-        vim.keymap.set('n', '<space>kj', vim.lsp.buf.rename, opts)
+        vim.keymap.set('n', '<space>gk', vim.lsp.buf.rename, opts)
         vim.keymap.set('n', 'gr', vim.lsp.buf.references, opts)
   end,
 })
@@ -61,7 +63,7 @@ local capabilities = require("cmp_nvim_lsp").default_capabilities()
 local lspconfig = require('lspconfig')
 
 -- Enable some language servers with the additional completion capabilities offered by nvim-cmp
-local servers = { 'clangd', 'java_language_server', 'tsserver' }
+local servers = { 'clangd', 'java_language_server', 'tsserver', 'pyright' }
 for _, lsp in ipairs(servers) do
   lspconfig[lsp].setup {
     -- on_attach = my_custom_on_attach,
@@ -104,3 +106,32 @@ cmp.setup {
         { name = 'luasnip' },
     },
 }
+
+-- latex
+
+-- This is necessary for VimTeX to load properly. The "indent" is optional.
+-- Note that most plugin managers will do this automatically.
+vim.cmd('filetype plugin indent on')
+
+-- This enables Vim's and neovim's syntax-related features. Without this, some
+-- VimTeX features will not work (see ":help vimtex-requirements" for more info).
+vim.cmd('syntax enable')
+
+-- Viewer options: One may configure the viewer either by specifying a built-in
+-- viewer method:
+vim.g.vimtex_view_method = 'zathura'
+
+-- Or with a generic interface:
+vim.g.vimtex_view_general_viewer = 'okular'
+vim.g.vimtex_view_general_options = '--unique file:@pdf#src:@line@tex'
+
+-- VimTeX uses latexmk as the default compiler backend. If you use it, which is
+-- strongly recommended, you probably don't need to configure anything. If you
+-- want another compiler backend, you can change it as follows. The list of
+-- supported backends and further explanation is provided in the documentation,
+-- see ":help vimtex-compiler".
+vim.g.vimtex_compiler_method = 'pdflatex'
+
+-- Most VimTeX mappings rely on localleader and this can be changed with the
+-- following line. The default is usually fine and is the symbol "\".
+vim.g.maplocalleader = ","
