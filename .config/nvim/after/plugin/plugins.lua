@@ -1,6 +1,8 @@
 vim.cmd.colorscheme("my")
 vim.cmd.colorscheme('habamax')
 vim.cmd.colorscheme("4coder")
+vim.cmd.colorscheme("PaperColor")
+vim.cmd('set background=light')
 
 
 -- configure Treesitter

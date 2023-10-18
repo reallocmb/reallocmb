@@ -119,10 +119,20 @@ _G.packer_plugins = {
     path = "/home/mb/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
   },
+  onehalf = {
+    loaded = true,
+    path = "/home/mb/.local/share/nvim/site/pack/packer/start/onehalf/vim/",
+    url = "https://github.com/sonph/onehalf"
+  },
   ["packer.nvim"] = {
     loaded = true,
     path = "/home/mb/.local/share/nvim/site/pack/packer/start/packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
+  },
+  ["papercolor-theme"] = {
+    loaded = true,
+    path = "/home/mb/.local/share/nvim/site/pack/packer/start/papercolor-theme",
+    url = "https://github.com/NLKNguyen/papercolor-theme"
   },
   playground = {
     loaded = true,
@@ -152,6 +162,10 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
+-- Runtimepath customization
+time([[Runtimepath customization]], true)
+vim.o.runtimepath = vim.o.runtimepath .. ",/home/mb/.local/share/nvim/site/pack/packer/start/onehalf/vim/"
+time([[Runtimepath customization]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then

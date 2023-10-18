@@ -81,6 +81,11 @@ return require('packer').startup(function(use)
     use('ellisonleao/gruvbox.nvim')
     use('tomasr/molokai')
     use('adigitoleo/vim-mellow')
+    use {
+        'sonph/onehalf',
+        rtp = 'vim/',
+    }
+    use('NLKNguyen/papercolor-theme')
 
     -- latex
     use('lervag/vimtex')
