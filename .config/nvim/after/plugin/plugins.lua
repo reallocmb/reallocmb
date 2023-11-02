@@ -1,8 +1,8 @@
 vim.cmd.colorscheme("my")
 vim.cmd.colorscheme('habamax')
-vim.cmd.colorscheme("4coder")
 vim.cmd.colorscheme("PaperColor")
-vim.cmd('set background=light')
+vim.cmd.colorscheme("4coder")
+vim.cmd('set background=dark')
 
 
 -- configure Treesitter
@@ -39,7 +39,7 @@ vim.api.nvim_create_autocmd('LspAttach', {
         vim.keymap.set('n', 'K', vim.lsp.buf.hover, opts)
         vim.keymap.set('n', 'gi', vim.lsp.buf.implementation, opts)
         vim.keymap.set('n', '<space>gk', vim.lsp.buf.rename, opts)
-        vim.keymap.set('n', 'gr', vim.lsp.buf.references, opts)
+        vim.keymap.set('n', 'ga', vim.lsp.buf.references, opts)
   end,
 })
 
