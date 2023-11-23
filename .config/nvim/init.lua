@@ -1,5 +1,7 @@
 vim.opt.langmap = "snrthjkl;hjklsnrt"
 
+vim.opt.cinoptions = "cino=(0t0"
+
 vim.opt.guicursor = ""
 vim.opt.nu = true
 vim.opt.relativenumber = true
@@ -89,4 +91,5 @@ return require('packer').startup(function(use)
 
     -- latex
     use('lervag/vimtex')
+    use('rhysd/vim-clang-format')
 end)
