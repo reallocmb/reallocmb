@@ -227,4 +227,4 @@ bar {
 }
 
 # i3 gaps
-# gaps inner 2px
+gaps inner 0px
