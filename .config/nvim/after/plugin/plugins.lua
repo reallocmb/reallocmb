@@ -19,12 +19,12 @@ vim.keymap.set('n', '<leader>fb', telescope.buffers, {})
 vim.keymap.set('n', '<leader>fs', telescope.help_tags, {})
 
 -- configure harpoon
-local harpoon_mark = require('harpoon.mark')
-local harpoon_ui = require('harpoon.ui')
-vim.keymap.set('n', '<leader>m', harpoon_mark.add_file, {})
-vim.keymap.set('n', '<leader>b', harpoon_ui.toggle_quick_menu, {})
-vim.keymap.set('n', '<C-b>', harpoon_ui.nav_prev, {})
-vim.keymap.set('n', '<C-m>', harpoon_ui.nav_next, {})
+-- local harpoon_mark = require('harpoon.mark')
+-- local harpoon_ui = require('harpoon.ui')
+-- vim.keymap.set('n', '<leader>m', harpoon_mark.add_file, {})
+-- vim.keymap.set('n', '<leader>b', harpoon_ui.toggle_quick_menu, {})
+-- vim.keymap.set('n', '<C-b>', harpoon_ui.nav_prev, {})
+-- vim.keymap.set('n', '<C-m>', harpoon_ui.nav_next, {})
 
 -- configure lsp
 require('lspconfig').clangd.setup{}
