@@ -63,7 +63,6 @@ hi StatusLine guifg=#333333 guibg=#c2bfa5 gui=NONE cterm=NONE
 hi StatusLineNC guifg=#7f7f8c guibg=#c2bfa5 gui=NONE cterm=NONE
 hi StatusLineTerm guifg=#333333 guibg=#c2bfa5 gui=NONE cterm=NONE
 hi StatusLineTermNC guifg=#ffffff guibg=#c2bfa5 gui=NONE cterm=NONE
-hi VertSplit guifg=#7f7f8c guibg=#c2bfa5 gui=NONE cterm=NONE
 hi Pmenu guifg=#ffffff guibg=#666666 gui=NONE cterm=NONE
 hi PmenuSel guifg=#333333 guibg=#f0e68c gui=NONE cterm=NONE
 hi PmenuSbar guifg=NONE guibg=#333333 gui=NONE cterm=NONE
