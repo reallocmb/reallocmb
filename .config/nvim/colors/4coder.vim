@@ -53,8 +53,8 @@ hi @number guifg=#50ff30
 hi @constant.builtin guifg=#db24cb
 hi @constant guifg=#90b080
 
-hi Normal guifg=#90b080 guibg=#333333 gui=NONE cterm=NONE
 hi Normal guifg=#90b080 guibg=#242424 gui=NONE cterm=NONE
+hi Normal guifg=#90b080 guibg=#333333 gui=NONE cterm=NONE
 hi Normal guifg=#90b080 guibg=#0c0c0c gui=NONE cterm=NONE
 hi NonText guifg=#6dceeb guibg=#333333 gui=NONE cterm=NONE
 hi NonText guifg=#6dceeb guibg=#242424 gui=NONE cterm=NONE
