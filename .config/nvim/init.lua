@@ -67,12 +67,13 @@ return require('packer').startup(function(use)
         requires = { {'nvim-lua/plenary.nvim'} }
     }
 
-    use "nvim-lua/plenary.nvim" -- don't forget to add this one if you don't have it yet!
+    use "nvim-lua/plenary.nvim"
     use {
         "ThePrimeagen/harpoon",
         branch = "harpoon2",
-        requires = { {"nvim-lua/plenary.nvim"} }
-}
+        requires = {{"nvim-lua/plenary.nvim"}}
+    }
+
     use('neovim/nvim-lspconfig')
     use('hrsh7th/nvim-cmp')
     use('hrsh7th/cmp-nvim-lsp')

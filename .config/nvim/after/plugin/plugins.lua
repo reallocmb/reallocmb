@@ -20,6 +20,12 @@ vim.keymap.set('n', '<leader>fs', telescope.help_tags, {})
 
 -- configure harpoon
 
+local harpoon = require("harpoon")
+harpoon:setup()
+vim.keymap.set('n', '<leader>m', function() harpoon:list():append() end)
+vim.keymap.set('n', '<leader>b', function() harpoon.ui:toggle_quick_menu(harpoon:list()) end)
+vim.keymap.set('n', '<C-b>', function() harpoon:list():prev() end)
+vim.keymap.set('n', '<C-m>', function() harpoon:list():next() end)
 
 -- local harpoon_mark = require('harpoon.mark')
 -- local harpoon_ui = require('harpoon.ui')
