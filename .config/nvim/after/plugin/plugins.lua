@@ -19,6 +19,8 @@ vim.keymap.set('n', '<leader>fb', telescope.buffers, {})
 vim.keymap.set('n', '<leader>fs', telescope.help_tags, {})
 
 -- configure harpoon
+
+
 -- local harpoon_mark = require('harpoon.mark')
 -- local harpoon_ui = require('harpoon.ui')
 -- vim.keymap.set('n', '<leader>m', harpoon_mark.add_file, {})

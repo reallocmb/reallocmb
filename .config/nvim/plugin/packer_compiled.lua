@@ -97,7 +97,7 @@ _G.packer_plugins = {
   harpoon = {
     loaded = true,
     path = "/home/mb/.local/share/nvim/site/pack/packer/start/harpoon",
-    url = "https://github.com/theprimeagen/harpoon"
+    url = "https://github.com/ThePrimeagen/harpoon"
   },
   molokai = {
     loaded = true,

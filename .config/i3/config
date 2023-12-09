@@ -18,6 +18,9 @@ set $urgent-bg-color        #e53935
 
 set $mod Mod1
 
+# flameshot
+bindsym $mod+w exec flameshot gui
+
 # alsa
 bindsym $mod+) exec amixer set Master 2%+
 bindsym $mod+( exec amixer set Master 2%-
