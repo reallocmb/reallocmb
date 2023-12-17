@@ -21,6 +21,12 @@ set $mod Mod1
 # flameshot
 bindsym $mod+w exec flameshot gui
 
+# xrandr
+bindsym $mod+m exec xrandr --output HDMI-1 --auto --right-of eDP-1
+bindsym $mod+Shift+m exec xrandr --output HDMI-1 --off
+bindsym $mod+b exec xrandr --output eDP-1 --auto
+bindsym $mod+Shift+b exec xrandr --output eDP-1 --off
+
 # alsa
 bindsym $mod+) exec amixer set Master 2%+
 bindsym $mod+( exec amixer set Master 2%-
