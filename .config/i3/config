@@ -10,9 +10,11 @@
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
 # Colors
-set $bg-color               #2f343f
-set $inactive-bg-color      #2f343f
-set $text-color             #a3a4f5
+# set $bg-color               #2f343f 
+set $bg-color               #03363e 
+set $inactive-bg-color      #03363e
+#set $text-color             #a3a4f5
+set $text-color             #e78f08
 set $inactive-text-color    #676e7d
 set $urgent-bg-color        #e53935
 
