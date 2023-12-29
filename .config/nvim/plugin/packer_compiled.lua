@@ -154,6 +154,11 @@ _G.packer_plugins = {
     path = "/home/mb/.local/share/nvim/site/pack/packer/start/vim-clang-format",
     url = "https://github.com/rhysd/vim-clang-format"
   },
+  ["vim-colors-solarized"] = {
+    loaded = true,
+    path = "/home/mb/.local/share/nvim/site/pack/packer/start/vim-colors-solarized",
+    url = "https://github.com/altercation/vim-colors-solarized"
+  },
   ["vim-mellow"] = {
     loaded = true,
     path = "/home/mb/.local/share/nvim/site/pack/packer/start/vim-mellow",

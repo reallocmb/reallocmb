@@ -82,6 +82,7 @@ return require('packer').startup(function(use)
 
     -- use('mbbill/undotree')
 
+    use('altercation/vim-colors-solarized')
     use('ellisonleao/gruvbox.nvim')
     use('tomasr/molokai')
     use('adigitoleo/vim-mellow')
