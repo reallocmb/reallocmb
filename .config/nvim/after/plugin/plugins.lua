@@ -1,6 +1,3 @@
-vim.cmd.colorscheme("my")
-vim.cmd.colorscheme('habamax')
-vim.cmd.colorscheme("PaperColor")
 vim.cmd.colorscheme("4coder")
 vim.cmd('set background=dark')
 
@@ -18,12 +15,58 @@ vim.keymap.set('n', '<leader>fg', telescope.live_grep, {})
 vim.keymap.set('n', '<leader>fb', telescope.buffers, {})
 vim.keymap.set('n', '<leader>fs', telescope.help_tags, {})
 
+-- debugging
+local dap = require("dap")
+dap.adapters.gdb = {
+  type = "executable",
+  command = "gdb",
+  args = { "-i", "dap" }
+}
+
+dap.configurations.c = {
+  {
+    name = "Launch",
+    type = "gdb",
+    request = "launch",
+    program = function()
+      return vim.fn.input('Path to executable: ', vim.fn.getcwd() .. '/', 'file')
+    end,
+    cwd = "${workspaceFolder}",
+  },
+}
+
+require("neodev").setup({
+    library = { plugins = { "nvim-dap-ui" }, types = true },
+})
+
+vim.keymap.set('n', '<C-o>', function() require('dap').step_over() end)
+vim.keymap.set('n', '<C-s>', function() require('dap').step_into() end)
+vim.keymap.set('n', '<leader>u', function() require('dap').continue() end)
+vim.keymap.set('n', '<leader>U', function() require('dap').terminate() end)
+vim.keymap.set('n', '<leader>b', function() require('dap').toggle_breakpoint() end)
+
+
+local dapui = require("dapui")
+dapui.setup()
+dap.listeners.before.attach.dapui_config = function()
+    dapui.open()
+end
+dap.listeners.before.launch.dapui_config = function()
+    dapui.open()
+end
+dap.listeners.before.event_terminated.dapui_config = function()
+    dapui.close()
+end
+dap.listeners.before.event_exited.dapui_config = function()
+    dapui.close()
+end
+
 -- configure harpoon
 
 local harpoon = require("harpoon")
 harpoon:setup()
-vim.keymap.set('n', '<leader>m', function() harpoon:list():append() end)
-vim.keymap.set('n', '<leader>b', function() harpoon.ui:toggle_quick_menu(harpoon:list()) end)
+vim.keymap.set('n', '<leader>B', function() harpoon:list():append() end)
+vim.keymap.set('n', '<leader>M', function() harpoon.ui:toggle_quick_menu(harpoon:list()) end)
 vim.keymap.set('n', '<C-b>', function() harpoon:list():prev() end)
 vim.keymap.set('n', '<C-m>', function() harpoon:list():next() end)
 
@@ -31,6 +74,7 @@ vim.keymap.set('n', '<C-m>', function() harpoon:list():next() end)
 -- local harpoon_ui = require('harpoon.ui')
 -- vim.keymap.set('n', '<leader>m', harpoon_mark.add_file, {})
 -- vim.keymap.set('n', '<leader>b', harpoon_ui.toggle_quick_menu, {})
+-- 
 -- vim.keymap.set('n', '<C-b>', harpoon_ui.nav_prev, {})
 -- vim.keymap.set('n', '<C-m>', harpoon_ui.nav_next, {})
 

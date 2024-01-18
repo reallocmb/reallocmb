@@ -28,7 +28,7 @@ bindsym $mod+y exec picom
 bindsym $mod+Shift+y exec pkill picom
 
 # xrandr
-bindsym $mod+m exec xrandr --output HDMI-1 --auto --right-of eDP-1
+bindsym $mod+m exec xrandr --output HDMI-1 --auto
 bindsym $mod+Shift+m exec xrandr --output HDMI-1 --off
 bindsym $mod+b exec xrandr --output eDP-1 --auto
 bindsym $mod+Shift+b exec xrandr --output eDP-1 --off

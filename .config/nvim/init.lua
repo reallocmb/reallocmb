@@ -22,7 +22,7 @@ vim.opt.incsearch = true
 vim.opt.termguicolors = true
 
 vim.opt.scrolloff = 8
-vim.opt.signcolumn = "no"
+-- vim.opt.signcolumn = "no"
 vim.opt.isfname:append("@-@")
 vim.opt.updatetime = 50
 
@@ -86,13 +86,14 @@ return require('packer').startup(function(use)
     use('ellisonleao/gruvbox.nvim')
     use('tomasr/molokai')
     use('adigitoleo/vim-mellow')
-    use {
-        'sonph/onehalf',
-        rtp = 'vim/',
-    }
     use('NLKNguyen/papercolor-theme')
 
     -- latex
     use('lervag/vimtex')
     use('rhysd/vim-clang-format')
+
+    --debugging
+    use('mfussenegger/nvim-dap')
+    use('folke/neodev.nvim')
+    use('rcarriga/nvim-dap-ui')
 end)
