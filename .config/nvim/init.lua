@@ -23,7 +23,6 @@ vim.opt.termguicolors = true
 
 vim.opt.scrolloff = 8
 -- vim.opt.signcolumn = "no"
-vim.opt.isfname:append("@-@")
 vim.opt.updatetime = 50
 
 -- highlight number
@@ -33,8 +32,6 @@ vim.api.nvim_command('set cursorlineopt=number')
 vim.g.mapleader = ' '
 
 -- my remaps
-vim.keymap.set('n', '<leader>e', vim.cmd.Ex)
-
 vim.keymap.set('n', '<leader>h', ':wincmd h<cr>')
 vim.keymap.set('n', '<leader>j', ':wincmd j<cr>')
 vim.keymap.set('n', '<leader>k', ':wincmd k<cr>')
@@ -83,6 +80,7 @@ return require('packer').startup(function(use)
     -- use('mbbill/undotree')
 
     use('altercation/vim-colors-solarized')
+    use('rose-pine/neovim')
     use('ellisonleao/gruvbox.nvim')
     use('tomasr/molokai')
     use('adigitoleo/vim-mellow')

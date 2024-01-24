@@ -1,5 +1,6 @@
 vim.cmd.colorscheme("4coder")
-vim.cmd('set background=dark')
+-- vim.cmd('set background=dark')
+vim.cmd.colorscheme("rose-pine")
 
 
 -- configure Treesitter
@@ -39,11 +40,11 @@ require("neodev").setup({
     library = { plugins = { "nvim-dap-ui" }, types = true },
 })
 
-vim.keymap.set('n', '<C-o>', function() require('dap').step_over() end)
-vim.keymap.set('n', '<C-s>', function() require('dap').step_into() end)
-vim.keymap.set('n', '<leader>u', function() require('dap').continue() end)
-vim.keymap.set('n', '<leader>U', function() require('dap').terminate() end)
-vim.keymap.set('n', '<leader>b', function() require('dap').toggle_breakpoint() end)
+-- vim.keymap.set('n', '<C-o>', function() require('dap').step_over() end)
+-- vim.keymap.set('n', '<C-s>', function() require('dap').step_into() end)
+-- vim.keymap.set('n', '<leader>u', function() require('dap').continue() end)
+-- vim.keymap.set('n', '<leader>U', function() require('dap').terminate() end)
+-- vim.keymap.set('n', '<leader>b', function() require('dap').toggle_breakpoint() end)
 
 
 local dapui = require("dapui")
