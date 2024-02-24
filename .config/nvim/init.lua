@@ -79,6 +79,7 @@ return require('packer').startup(function(use)
 
     -- use('mbbill/undotree')
 
+    use("AlessandroYorba/Alduin");
     use('altercation/vim-colors-solarized')
     use('rose-pine/neovim')
     use('ellisonleao/gruvbox.nvim')
@@ -94,4 +95,10 @@ return require('packer').startup(function(use)
     use('mfussenegger/nvim-dap')
     use('folke/neodev.nvim')
     use('rcarriga/nvim-dap-ui')
+
+    -- statusline
+    use {
+        'nvim-lualine/lualine.nvim',
+        requires = { 'nvim-tree/nvim-web-devicons', opt = true }
+    }
 end)
