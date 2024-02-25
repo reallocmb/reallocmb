@@ -56,9 +56,11 @@ hi @constant guifg=#90b080
 hi Normal guifg=#90b080 guibg=#242424 gui=NONE cterm=NONE
 hi Normal guifg=#90b080 guibg=#333333 gui=NONE cterm=NONE
 hi Normal guifg=#90b080 guibg=#0c0c0c gui=NONE cterm=NONE
+hi Normal guifg=#90b080 guibg=#181818 gui=NONE cterm=NONE
 hi NonText guifg=#6dceeb guibg=#333333 gui=NONE cterm=NONE
 hi NonText guifg=#6dceeb guibg=#242424 gui=NONE cterm=NONE
 hi NonText guifg=#6dceeb guibg=#0c0c0c gui=NONE cterm=NONE
+hi NonText guifg=#6dceeb guibg=#181818 gui=NONE cterm=NONE
 hi StatusLine guifg=#333333 guibg=#c2bfa5 gui=NONE cterm=NONE
 hi StatusLineNC guifg=#7f7f8c guibg=#c2bfa5 gui=NONE cterm=NONE
 hi StatusLineTerm guifg=#333333 guibg=#c2bfa5 gui=NONE cterm=NONE
