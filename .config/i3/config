@@ -232,11 +232,13 @@ client.urgent               $urgent-bg-color    $urgent-bg-color    $text-color 
 # finds out, if available)
 
 #for_window [class=".*"] border none
-default_border pixel 5
+default_border pixel 1
 
 bar {
     status_command i3blocks -c ~/.config/i3/i3blocks.conf
+    #status_command yabar
     #status_command i3status -c ~/.config/i3/i3status.conf
+    #status_command polybar
     position top
     colors {
         background $bg-color
@@ -248,4 +250,4 @@ bar {
 }
 
 # i3 gaps
-gaps inner 10px
+gaps inner 0px

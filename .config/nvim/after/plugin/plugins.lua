@@ -92,6 +92,10 @@ vim.api.nvim_create_autocmd('LspAttach', {
         vim.keymap.set('n', 'gi', vim.lsp.buf.implementation, opts)
         vim.keymap.set('n', '<space>gk', vim.lsp.buf.rename, opts)
         vim.keymap.set('n', 'ga', vim.lsp.buf.references, opts)
+        vim.keymap.set('n', 'g,', vim.diagnostic.goto_prev)
+        vim.keymap.set('n', 'g.', vim.diagnostic.goto_next)
+        vim.keymap.set('n', 'ge', vim.diagnostic.setloclist)
+        vim.keymap.set('n', 'gE', vim.diagnostic.open_float)
   end,
 })
 
